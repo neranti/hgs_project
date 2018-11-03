@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="webStyle.css">
+
+	<script>
+		function login(){
+			var user;
+			var password;
+
+			user = frmLog.txUser.value;
+			password = frmLog.txPassword.value;
+
+			alert("User: " + user +"\nPassword: " + password + "\nYou are now logged in.");
+			window.open("index.html","_self");
+		}
+	</script>
+</head>
+<body class="login">
+<form name="frmLog">
+
+
+<div id="container">
+<center>
+	<h1 style="color:#eb3349;">Log In Form</h1>
+	<input class="textbx" type="text" placeholder="Username or Email" name="txUser">
+	<br>
+	<input class="textbx" type="password" placeholder="Password" name="txPassword">
+	<br>
+	<input class="loginButton" type="button" value="Log In" onclick="login()">
+	<br>
+	<spam class="logtx">Forgot Password?</spam>
+</center>
+</div>
+<center style="color:white;">
+	<hr>
+	* This page is not a completely working login screen. This is soley for the purpose of practicing 
+	forms.* 
+</center>
+
+</form>
+<div class="bottom">
+  
+  <span style="color:grey; ">Contact:</span><br><br>
+  Neranti Gary<br>
+  neranti.gary@hgs.hiddengeniusproject.org
+
+</div>
+</body>
+</html>

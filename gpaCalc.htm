@@ -1,0 +1,321 @@
+
+<!doctype html>
+<html>
+<head>
+	<title>GPA Calculator</title>
+
+	<link rel="stylesheet" type="text/css" href="webStyle.css">
+
+	<script>
+
+	function numClasses(){
+		var classes;
+		var test;
+		var gpa;
+		var sum;
+		var row1;
+		var row2;
+		var row3;
+		var row4;
+		var row5;
+		var row6;
+		var row7;
+
+		classes = Number(myfrm.txClass.value);
+
+		row1 = Number(myfrm.slGrades1.value);
+		row2 = Number(myfrm.slGrades2.value);
+		row3 = Number(myfrm.slGrades3.value);
+		row4 = Number(myfrm.slGrades4.value);
+		row5 = Number(myfrm.slGrades5.value);
+		row6 = Number(myfrm.slGrades6.value);
+		row7 = Number(myfrm.slGrades7.value);
+
+		alert("Please make sure that your number of classes match up with the amount of grades you entered in the select boxes. If they are not equal, the code will produce an undisired GPA.");
+		var r = confirm("Do you have " + classes + " classes?");
+
+		sum = row1 + row2 + row3 + row4 + row5 + row6 + row7;
+		gpa = sum/classes;
+
+		myfrm.txGpa.value = gpa.toFixed(2);
+}
+
+    function test(){
+        alert("hi");
+    }
+</script>	
+</head>
+<body class="gpa" style="color: white;">
+
+<center>
+
+<div>
+<a href="http://www.hiddengeniusproject.org/" target="_blank">
+<img src = "http://www.hiddengeniusproject.org/wp/wp-content/uploads/2018/01/HGPAssets_SecondaryLogo_Yellow-7-e1515176540614.png">
+</a>
+<br>
+<h1><i>GPA Calculator</i></h1><br>
+<hr><br>
+
+<form name="myfrm">
+
+How many classes do you have?
+<input type="text" name="txClass">*
+	
+
+<table>
+	<tr>
+		<th>Class</th>
+		<th>Grade</th>
+	</tr>
+	<tr>
+		<td>
+			<select class="select">
+				<option name="slNone"></option>
+				<option name="slMath">Math</option>
+				<option name="slHistory">History</option>
+				<option name="slScience">Science</option>
+				<option name="slEnglish">English</option>
+				<option name="slPE">Physical Education</option>
+				<option name="slHealth">Health</option>
+				<option name="slLanguage">Foriegn Language</option>
+			</select>
+		</td>
+	<td>
+		<select name="slGrades1" class="select">
+			<option></option>
+			<option value="4.3">A+</option>
+			<option value="4.0">A</option>
+			<option value="3.7">A-</option>
+			<option value="3.3">B+</option>
+			<option value="3.0">B</option>
+			<option value="2.7">B-</option>
+			<option value="2.3">C+</option>
+			<option value="2.0">C</option>
+			<option value="1.7">C-</option>
+			<option value="1.3">D+</option>
+			<option value="1.0">D</option>
+			<option value="0.7">D-</option>
+			<option value="0">F</option>
+		</select>
+	</tr>
+
+		<tr>
+		<td>
+			<select class="select">
+				<option name="slNone"></option>
+				<option name="slMath">Math</option>
+				<option name="slHistory">History</option>
+				<option name="slScience">Science</option>
+				<option name="slEnglish">English</option>
+				<option name="slPE">Physical Education</option>
+				<option name="slHealth">Health</option>
+				<option name="slLanguage">Foriegn Language</option>
+			</select>
+		</td>
+	<td>
+		<select name="slGrades2" class="select">
+			<option></option>
+			<option value="4.3">A+</option>
+			<option value="4.0">A</option>
+			<option value="3.7">A-</option>
+			<option value="3.3">B+</option>
+			<option value="3.0">B</option>
+			<option value="2.7">B-</option>
+			<option value="2.3">C+</option>
+			<option value="2.0">C</option>
+			<option value="1.7">C-</option>
+			<option value="1.3">D+</option>
+			<option value="1.0">D</option>
+			<option value="0.7">D-</option>
+			<option value="0">F</option>
+		</select>
+	</tr>
+
+		<tr>
+		<td>
+			<select class="select">
+				<option name="slNone"></option>
+				<option name="slMath">Math</option>
+				<option name="slHistory">History</option>
+				<option name="slScience">Science</option>
+				<option name="slEnglish">English</option>
+				<option name="slPE">Physical Education</option>
+				<option name="slHealth">Health</option>
+				<option name="slLanguage">Foriegn Language</option>
+			</select>
+		</td>
+	<td>
+		<select name="slGrades3" class="select">
+			<option></option>
+			<option value="4.3">A+</option>
+			<option value="4.0">A</option>
+			<option value="3.7">A-</option>
+			<option value="3.3">B+</option>
+			<option value="3.0">B</option>
+			<option value="2.7">B-</option>
+			<option value="2.3">C+</option>
+			<option value="2.0">C</option>
+			<option value="1.7">C-</option>
+			<option value="1.3">D+</option>
+			<option value="1.0">D</option>
+			<option value="0.7">D-</option>
+			<option value="0">F</option>
+		</select>
+	</tr>
+
+		<tr>
+		<td>
+			<select class="select">
+				<option name="slNone"></option>
+				<option name="slMath">Math</option>
+				<option name="slHistory">History</option>
+				<option name="slScience">Science</option>
+				<option name="slEnglish">English</option>
+				<option name="slPE">Physical Education</option>
+				<option name="slHealth">Health</option>
+				<option name="slLanguage">Foriegn Language</option>
+			</select>
+		</td>
+	<td>
+		<select name="slGrades4" class="select">
+			<option></option>
+			<option value="4.3">A+</option>
+			<option value="4.0">A</option>
+			<option value="3.7">A-</option>
+			<option value="3.3">B+</option>
+			<option value="3.0">B</option>
+			<option value="2.7">B-</option>
+			<option value="2.3">C+</option>
+			<option value="2.0">C</option>
+			<option value="1.7">C-</option>
+			<option value="1.3">D+</option>
+			<option value="1.0">D</option>
+			<option value="0.7">D-</option>
+			<option value="0">F</option>
+		</select>
+	</tr>
+
+		<tr>
+		<td>
+			<select class="select">
+				<option name="slNone"></option>
+				<option name="slMath">Math</option>
+				<option name="slHistory">History</option>
+				<option name="slScience">Science</option>
+				<option name="slEnglish">English</option>
+				<option name="slPE">Physical Education</option>
+				<option name="slHealth">Health</option>
+				<option name="slLanguage">Foriegn Language</option>
+			</select>
+		</td>
+	<td>
+		<select name="slGrades5" class="select">
+			<option></option>
+			<option value="4.3">A+</option>
+			<option value="4.0">A</option>
+			<option value="3.7">A-</option>
+			<option value="3.3">B+</option>
+			<option value="3.0">B</option>
+			<option value="2.7">B-</option>
+			<option value="2.3">C+</option>
+			<option value="2.0">C</option>
+			<option value="1.7">C-</option>
+			<option value="1.3">D+</option>
+			<option value="1.0">D</option>
+			<option value="0.7">D-</option>
+			<option value="0">F</option>
+		</select>
+	</tr>
+
+		<tr>
+		<td>
+			<select class="select">
+				<option name="slNone"></option>
+				<option name="slMath">Math</option>
+				<option name="slHistory">History</option>
+				<option name="slScience">Science</option>
+				<option name="slEnglish">English</option>
+				<option name="slPE">Physical Education</option>
+				<option name="slHealth">Health</option>
+				<option name="slLanguage">Foriegn Language</option>
+			</select>
+		</td>
+	<td>
+		<select name="slGrades6" class="select">
+			<option></option>
+			<option value="4.3">A+</option>
+			<option value="4.0">A</option>
+			<option value="3.7">A-</option>
+			<option value="3.3">B+</option>
+			<option value="3.0">B</option>
+			<option value="2.7">B-</option>
+			<option value="2.3">C+</option>
+			<option value="2.0">C</option>
+			<option value="1.7">C-</option>
+			<option value="1.3">D+</option>
+			<option value="1.0">D</option>
+			<option value="0.7">D-</option>
+			<option value="0">F</option>
+		</select>
+	</tr>
+
+		<tr>
+		<td>
+			<select class="select">
+				<option name="slNone"></option>
+				<option name="slMath">Math</option>
+				<option name="slHistory">History</option>
+				<option name="slScience">Science</option>
+				<option name="slEnglish">English</option>
+				<option name="slPE">Physical Education</option>
+				<option name="slHealth">Health</option>
+				<option name="slLanguage">Foriegn Language</option>
+			</select>
+		</td>
+	<td>
+		<select name="slGrades7" class="select">
+			<option></option>
+			<option value="4.3">A+</option>
+			<option value="4.0">A</option>
+			<option value="3.7">A-</option>
+			<option value="3.3">B+</option>
+			<option value="3.0">B</option>
+			<option value="2.7">B-</option>
+			<option value="2.3">C+</option>
+			<option value="2.0">C</option>
+			<option value="1.7">C-</option>
+			<option value="1.3">D+</option>
+			<option value="1.0">D</option>
+			<option value="0.7">D-</option>
+			<option value="0">F</option>
+		</select>
+	</td>
+	</tr>
+
+</table>
+<br>
+<input class="hover" type="button" name="btCalc" value="Go" onclick="numClasses()">
+<br><br>
+<input type="text" name = "txGpa" disabled>
+
+</form>
+<hr>
+</div>
+
+<h3><u>About this Page</u></h3>
+<p style="padding:10px 150px;">This page, as you see is a GPA Calculator. It shows my knowledge mainly in JavaScript. It shows how to properly use a JavaScript form. This page demonstrates how to get info from certain objects in the form (like the text box) and also insert information back into the form. What happens is that this page collects your grades and transforms the letter grade into an integer (i.e. A = 4.0). Then it adds up all of those integers. After this, the code gets the number of classes you entered into the text box and divides that by the sum of the grades, giving your calculated GPA and inserting it into the disabled text box at the bottom.
+
+</center>
+</body>
+</center>
+
+<div class="bottom">
+  
+  <span style="color:grey; ">Contact:</span><br><br>
+  Neranti Gary<br>
+  neranti.gary@hgs.hiddengeniusproject.org
+
+</div>
+</html>
+
